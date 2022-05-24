@@ -71,10 +71,10 @@ End
 from NashHouse
 
 update NashHouse
-set SoldAsVacant = 
+set SoldAsVacant  
 	Case
-		when SoldAsVacant = 'N' then 'No'
-		when SoldAsVacant = 'Y' then 'Yes'
+		when 'N' then 'No'
+		when 'Y' then 'Yes'
 		else SoldAsVacant
 	End
 
